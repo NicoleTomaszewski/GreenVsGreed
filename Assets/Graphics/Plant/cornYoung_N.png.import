@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cornYoung_N.png-a1ed81b36bbc6980d294c817c39459a6.stex"
+path="res://.import/cornYoung_N.png-208419822aa9ad0f38cb42bc67209ef9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/gfs/Plant/cornYoung_N.png"
-dest_files=[ "res://.import/cornYoung_N.png-a1ed81b36bbc6980d294c817c39459a6.stex" ]
+source_file="res://Assets/Graphics/Plant/cornYoung_N.png"
+dest_files=[ "res://.import/cornYoung_N.png-208419822aa9ad0f38cb42bc67209ef9.stex" ]
 
 [params]
 
