@@ -30,8 +30,9 @@ text = "Day 1"
 margin_left = 8.0
 margin_top = 8.0
 margin_right = 107.0
-margin_bottom = 22.0
-text = "Money: $20000"
+margin_bottom = 32.0
+text = "Money: $20000
+Income: $0"
 
 [node name="EndTurnButton" type="Button" parent="."]
 margin_left = 120.0
@@ -47,14 +48,14 @@ margin_top = 48.0
 margin_right = 120.0
 margin_bottom = 168.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="Farm Buildings" type="VBoxContainer" parent="."]
 margin_left = 128.0
 margin_top = 48.0
 margin_right = 204.0
 margin_bottom = 340.0
 rect_scale = Vector2( 0.685158, 0.654964 )
 
-[node name="greenhouse" type="Button" parent="VBoxContainer"]
+[node name="greenhouse" type="Button" parent="Farm Buildings"]
 margin_right = 76.0
 margin_bottom = 70.0
 hint_tooltip = "$500"
@@ -63,35 +64,15 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 icon = ExtResource( 1 )
 
-[node name="base" type="Button" parent="VBoxContainer"]
+[node name="solar" type="Button" parent="Farm Buildings"]
 margin_top = 74.0
 margin_right = 76.0
 margin_bottom = 144.0
-hint_tooltip = "1000"
-mouse_default_cursor_shape = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
-icon = ExtResource( 3 )
-
-[node name="solar" type="Button" parent="VBoxContainer"]
-margin_top = 148.0
-margin_right = 76.0
-margin_bottom = 218.0
 hint_tooltip = "2000"
 mouse_default_cursor_shape = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 icon = ExtResource( 2 )
-
-[node name="mine" type="Button" parent="VBoxContainer"]
-margin_top = 222.0
-margin_right = 76.0
-margin_bottom = 292.0
-hint_tooltip = "800"
-mouse_default_cursor_shape = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
-icon = ExtResource( 4 )
 
 [node name="ShopText" type="Label" parent="."]
 margin_left = 128.0
@@ -107,8 +88,35 @@ margin_top = 184.0
 margin_right = 115.0
 margin_bottom = 240.0
 
+[node name="Company Buildings" type="VBoxContainer" parent="."]
+visible = false
+margin_left = 128.0
+margin_top = 48.0
+margin_right = 204.0
+margin_bottom = 340.0
+rect_scale = Vector2( 0.685158, 0.654964 )
+
+[node name="base" type="Button" parent="Company Buildings"]
+margin_right = 76.0
+margin_bottom = 70.0
+hint_tooltip = "1000"
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+icon = ExtResource( 3 )
+
+[node name="mine" type="Button" parent="Company Buildings"]
+margin_top = 74.0
+margin_right = 76.0
+margin_bottom = 144.0
+hint_tooltip = "800"
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+icon = ExtResource( 4 )
+
 [connection signal="button_up" from="EndTurnButton" to="." method="_on_EndTurnButton_button_up"]
-[connection signal="button_up" from="VBoxContainer/greenhouse" to="." method="_on_greenhouse_button_up"]
-[connection signal="button_up" from="VBoxContainer/base" to="." method="_on_base_button_up"]
-[connection signal="button_up" from="VBoxContainer/solar" to="." method="_on_solar_button_up"]
-[connection signal="button_up" from="VBoxContainer/mine" to="." method="_on_mine_button_up"]
+[connection signal="button_up" from="Farm Buildings/greenhouse" to="." method="_on_greenhouse_button_up"]
+[connection signal="button_up" from="Farm Buildings/solar" to="." method="_on_solar_button_up"]
+[connection signal="button_up" from="Company Buildings/base" to="." method="_on_base_button_up"]
+[connection signal="button_up" from="Company Buildings/mine" to="." method="_on_mine_button_up"]

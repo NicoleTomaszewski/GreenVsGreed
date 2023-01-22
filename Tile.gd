@@ -38,6 +38,16 @@ func place_building ():
 		var img = globals.BuildingsTextures[globals.next_placement]
 		if img != null:
 			buildingIcon.set_texture(img)
+			
+		if (globals.cur_player == globals.FARMER):
+			if (buildingType != 0):
+				globals.income[globals.COMPANY] = globals.income[globals.COMPANY] - globals.BuildingsIncome[buildingType]
+			globals.income[globals.FARMER] = globals.income[globals.FARMER] + globals.BuildingsIncome[globals.next_placement]
+		else:
+			if (buildingType != 0):
+				globals.income[globals.FARMER] = globals.income[globals.FARMER] - globals.BuildingsIncome[buildingType]
+			globals.income[globals.COMPANY] = globals.income[globals.COMPANY] + globals.BuildingsIncome[globals.next_placement]
+		
 		buildingType = globals.next_placement
 		print(globals.money)
 	elif true:

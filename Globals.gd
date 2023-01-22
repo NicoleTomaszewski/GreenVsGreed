@@ -16,8 +16,9 @@ var cur_player = P1
 
 var money = [1000,1000]
 var levels = [0,0]
+var income = [0, 0]
 
-var day = 0
+var day = 1
 # Scale of 1-10
 var polution = 0
 var weather = Weather.CLEAR
@@ -46,6 +47,15 @@ const BuildingsCost = [
 	1500, # Greenhouse
 ]
 
+const BuildingsIncome = [
+	0, # Nothing
+	200, # Crops
+	200, # Mine
+	350, # Solar
+	350, # Base
+	500, # Greenhouse
+]
+
 const BuildingsTextures = [
 	null,
 	null,
@@ -58,9 +68,9 @@ const BuildingsTextures = [
 var next_placement = BuildingsFarmer.SOLAR
 
 func reset_data():
-	money = [0,0]
+	money = [1000,1000]
 	levels = [0,0]
-	day = 0
+	day = 1
 	polution = 0
 	weather = Weather.CLEAR
 	cur_player = P1

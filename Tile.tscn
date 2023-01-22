@@ -5,7 +5,7 @@
 [ext_resource path="res://Assets/Graphics/Factory/TileHighlight.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 32, 32 )
+extents = Vector2( 32, 31 )
 
 [node name="Tile" type="Area2D"]
 script = ExtResource( 2 )
