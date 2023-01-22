@@ -1,3 +1,5 @@
+#comment
+
 extends Area2D
 
 onready var globals = get_node("/root/Globals")

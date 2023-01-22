@@ -1,3 +1,5 @@
+#comment
+
 extends Control
 
 onready var globals = get_node("/root/Globals")
