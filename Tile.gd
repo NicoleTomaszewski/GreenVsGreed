@@ -1,9 +1,11 @@
 extends Area2D
 
+onready var globals = get_node("/root/Globals")
 
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
+
 var canPlaceBuilding : bool = false
 var buildingType = 0 #can assign different builds different number
 var isFarmer : bool = false
@@ -27,6 +29,8 @@ func toggle_highlight (toggle):
 
 
 func place_building ():
+	print(globals.money)
+	globals.money += 10 
 	if buildingType == 0:
 		buildingType = 1
 		ground.modulate = Color(0,0,1)
