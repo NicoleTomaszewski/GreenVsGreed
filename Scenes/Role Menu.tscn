@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Assets/Graphics/RobotoMono-VariableFont_wght.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Scenes/Test Game.tscn" type="PackedScene" id=2]
+[ext_resource path="res://MainScreen.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scripts/Role Menu.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
