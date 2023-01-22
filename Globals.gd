@@ -6,7 +6,78 @@ extends Node
 # var b = "text"
 var current_scene = null
 
-var money = 5
+
+const P1 = 0
+const P2 = 1
+const FARMER = 0
+const COMPANY = 1
+
+var cur_player = P1
+
+var money = [1000,1000]
+var levels = [0,0]
+
+var day = 0
+# Scale of 1-10
+var polution = 0
+var weather = Weather.CLEAR
+enum Weather {
+	CLEAR,
+	RAINY,
+	STORMY
+}
+
+enum BuildingsFarmer {
+	CROPS = 1,
+	SOLAR = 3,
+	GREENHOUSE = 5,
+}
+enum BuildingsCompany {
+	MINE = 2,
+	BASE = 4
+}
+
+const BuildingsCost = [
+	0, # Nothing
+	500, # Crops
+	500, # Mine
+	1000, # Solar
+	1000, # Base
+	1500, # Greenhouse
+]
+
+const BuildingsTextures = [
+	null,
+	null,
+	preload("res://Assets/Graphics/Factory/Mine.png"),
+	preload("res://Assets/Graphics/Factory/SolarPanel.png"),
+	null,
+	preload("res://Assets/Graphics/Factory/Greenhouse.png")
+]
+
+var next_placement = BuildingsFarmer.SOLAR
+
+func reset_data():
+	money = [0,0]
+	levels = [0,0]
+	day = 0
+	polution = 0
+	weather = Weather.CLEAR
+	cur_player = P1
+	next_placement = 0
+	
+	
+func cur_player_money():
+	return money[cur_player]
+
+func next_placement_image():
+	return BuildingsTextures[next_placement]
+	
+func next_placement_cost():
+	return BuildingsCost[next_placement]
+
+func next_turn():
+	pass
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

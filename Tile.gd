@@ -29,11 +29,22 @@ func toggle_highlight (toggle):
 
 
 func place_building ():
+	# Placing something and have money to do so
 	print(globals.money)
-	globals.money += 10 
-	if buildingType == 0:
-		buildingType = 1
-		ground.modulate = Color(0,0,1)
+	print(globals.next_placement)
+	print(globals.next_placement_cost())
+	if globals.next_placement != 0 && globals.cur_player_money() >= globals.next_placement_cost() && buildingType != globals.next_placement:
+		globals.money[globals.cur_player] -= globals.next_placement_cost()
+		var img = globals.BuildingsTextures[globals.next_placement]
+		if img != null:
+			buildingIcon.set_texture(img)
+		buildingType = globals.next_placement
+		print(globals.money)
+	elif true:
+		# Skip everything past here
+		pass
+	elif buildingType == 0:
+		pass
 	elif buildingType == 1:
 		buildingType = 2
 		buildingIcon.set_texture(solar)
