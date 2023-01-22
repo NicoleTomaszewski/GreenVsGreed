@@ -1,8 +1,369 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Test Game.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.270588, 0.494118, 0.168627, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.176471, 0.329412, 0.109804, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.360784, 0.662745, 0.227451, 1 )
 
 [node name="Test Game" type="Node2D"]
+script = ExtResource( 1 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect2" type="ColorRect" parent="."]
 margin_right = 1024.0
 margin_bottom = 600.0
-color = Color( 0.568627, 0.101961, 0.717647, 1 )
+color = Color( 0.329412, 0.211765, 0.117647, 1 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Grid" type="VBoxContainer" parent="HBoxContainer"]
+margin_right = 510.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="A 1-5" type="HBoxContainer" parent="HBoxContainer/Grid"]
+margin_right = 510.0
+margin_bottom = 116.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="A1" type="Button" parent="HBoxContainer/Grid/A 1-5"]
+margin_right = 98.0
+margin_bottom = 116.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="A2" type="Button" parent="HBoxContainer/Grid/A 1-5"]
+margin_left = 102.0
+margin_right = 201.0
+margin_bottom = 116.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="A3" type="Button" parent="HBoxContainer/Grid/A 1-5"]
+margin_left = 205.0
+margin_right = 304.0
+margin_bottom = 116.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="A4" type="Button" parent="HBoxContainer/Grid/A 1-5"]
+margin_left = 308.0
+margin_right = 407.0
+margin_bottom = 116.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="A5" type="Button" parent="HBoxContainer/Grid/A 1-5"]
+margin_left = 411.0
+margin_right = 510.0
+margin_bottom = 116.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="B 1-5" type="HBoxContainer" parent="HBoxContainer/Grid"]
+margin_top = 120.0
+margin_right = 510.0
+margin_bottom = 237.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="B1" type="Button" parent="HBoxContainer/Grid/B 1-5"]
+margin_right = 98.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="B2" type="Button" parent="HBoxContainer/Grid/B 1-5"]
+margin_left = 102.0
+margin_right = 201.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="B3" type="Button" parent="HBoxContainer/Grid/B 1-5"]
+margin_left = 205.0
+margin_right = 304.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="B4" type="Button" parent="HBoxContainer/Grid/B 1-5"]
+margin_left = 308.0
+margin_right = 407.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="B5" type="Button" parent="HBoxContainer/Grid/B 1-5"]
+margin_left = 411.0
+margin_right = 510.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="C 1-5" type="HBoxContainer" parent="HBoxContainer/Grid"]
+margin_top = 241.0
+margin_right = 510.0
+margin_bottom = 358.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="C1" type="Button" parent="HBoxContainer/Grid/C 1-5"]
+margin_right = 98.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="C2" type="Button" parent="HBoxContainer/Grid/C 1-5"]
+margin_left = 102.0
+margin_right = 201.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="C3" type="Button" parent="HBoxContainer/Grid/C 1-5"]
+margin_left = 205.0
+margin_right = 304.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="C4" type="Button" parent="HBoxContainer/Grid/C 1-5"]
+margin_left = 308.0
+margin_right = 407.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="C5" type="Button" parent="HBoxContainer/Grid/C 1-5"]
+margin_left = 411.0
+margin_right = 510.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="D 1-5" type="HBoxContainer" parent="HBoxContainer/Grid"]
+margin_top = 362.0
+margin_right = 510.0
+margin_bottom = 479.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="D1" type="Button" parent="HBoxContainer/Grid/D 1-5"]
+margin_right = 98.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="D2" type="Button" parent="HBoxContainer/Grid/D 1-5"]
+margin_left = 102.0
+margin_right = 201.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="D3" type="Button" parent="HBoxContainer/Grid/D 1-5"]
+margin_left = 205.0
+margin_right = 304.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="D4" type="Button" parent="HBoxContainer/Grid/D 1-5"]
+margin_left = 308.0
+margin_right = 407.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="D5" type="Button" parent="HBoxContainer/Grid/D 1-5"]
+margin_left = 411.0
+margin_right = 510.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="E 1-5" type="HBoxContainer" parent="HBoxContainer/Grid"]
+margin_top = 483.0
+margin_right = 510.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="E1" type="Button" parent="HBoxContainer/Grid/E 1-5"]
+margin_right = 98.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="E2" type="Button" parent="HBoxContainer/Grid/E 1-5"]
+margin_left = 102.0
+margin_right = 201.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="E3" type="Button" parent="HBoxContainer/Grid/E 1-5"]
+margin_left = 205.0
+margin_right = 304.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="E4" type="Button" parent="HBoxContainer/Grid/E 1-5"]
+margin_left = 308.0
+margin_right = 407.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="E5" type="Button" parent="HBoxContainer/Grid/E 1-5"]
+margin_left = 411.0
+margin_right = 510.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="UI" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 514.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[connection signal="button_up" from="HBoxContainer/Grid/A 1-5/A1" to="." method="_on_A1_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/A 1-5/A2" to="." method="_on_A2_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/A 1-5/A3" to="." method="_on_A3_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/A 1-5/A4" to="." method="_on_A4_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/A 1-5/A5" to="." method="_on_A5_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/B 1-5/B1" to="." method="_on_B1_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/B 1-5/B2" to="." method="_on_B2_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/B 1-5/B3" to="." method="_on_B3_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/B 1-5/B4" to="." method="_on_B4_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/B 1-5/B5" to="." method="_on_B5_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/C 1-5/C1" to="." method="_on_C1_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/C 1-5/C2" to="." method="_on_C2_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/C 1-5/C3" to="." method="_on_C3_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/C 1-5/C4" to="." method="_on_C4_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/C 1-5/C5" to="." method="_on_C5_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/D 1-5/D1" to="." method="_on_D1_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/D 1-5/D2" to="." method="_on_D2_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/D 1-5/D3" to="." method="_on_D3_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/D 1-5/D4" to="." method="_on_D4_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/D 1-5/D5" to="." method="_on_D5_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/E 1-5/E1" to="." method="_on_E1_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/E 1-5/E2" to="." method="_on_E2_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/E 1-5/E3" to="." method="_on_E3_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/E 1-5/E4" to="." method="_on_E4_button_up"]
+[connection signal="button_up" from="HBoxContainer/Grid/E 1-5/E5" to="." method="_on_E5_button_up"]
