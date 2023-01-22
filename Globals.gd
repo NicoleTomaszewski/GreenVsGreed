@@ -56,6 +56,7 @@ const BuildingsIncome = [
 	350, # Solar
 	350, # Base
 	500, # Greenhouse
+	500, #Storage
 ]
 
 const BuildingsTextures = [
@@ -68,7 +69,7 @@ const BuildingsTextures = [
 	preload("res://Assets/Graphics/Factory/Storage.png")
 ]
 
-var next_placement = BuildingsFarmer.CROPS
+var next_placement = 0
 
 func reset_data():
 	money = [1000,1000]
