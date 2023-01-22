@@ -34,6 +34,7 @@ bg_color = Color( 0, 0, 0, 0.686275 )
 bg_color = Color( 0, 0, 0, 0.392157 )
 
 [node name="Create Game Menu" type="Node2D"]
+scale = Vector2( 0.49775, 0.533416 )
 script = ExtResource( 2 )
 roleMenuScene = ExtResource( 3 )
 

@@ -36,6 +36,7 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
 [node name="Start Menu" type="Node2D"]
+scale = Vector2( 0.49916, 0.537082 )
 script = ExtResource( 2 )
 joinGameMenuScene = ExtResource( 3 )
 createGameMenuScene = ExtResource( 4 )

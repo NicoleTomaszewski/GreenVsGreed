@@ -56,7 +56,6 @@ const BuildingsTextures = [
 	preload("res://Assets/Graphics/Factory/Base.png"),
 	preload("res://Assets/Graphics/Factory/Greenhouse.png"),
 	preload("res://Assets/Graphics/Factory/Storage.png")
-	
 ]
 
 var next_placement = BuildingsFarmer.CROPS
