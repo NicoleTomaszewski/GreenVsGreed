@@ -34,6 +34,7 @@ bg_color = Color( 0, 0, 0, 0.686275 )
 bg_color = Color( 0, 0, 0, 0.392157 )
 
 [node name="Join Game Menu" type="Node2D"]
+scale = Vector2( 0.497214, 0.532234 )
 script = ExtResource( 2 )
 testGameScene = ExtResource( 3 )
 

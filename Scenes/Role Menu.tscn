@@ -34,6 +34,7 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
 [node name="Role Menu" type="Node2D"]
+scale = Vector2( 0.499156, 0.532934 )
 script = ExtResource( 3 )
 testGameScene = ExtResource( 2 )
 
