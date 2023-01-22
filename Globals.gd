@@ -8,6 +8,7 @@ extends Node
 # var b = "text"
 var current_scene = null
 
+var updateMoney = false
 
 const P1 = 0
 const P2 = 1

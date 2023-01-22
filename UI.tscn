@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assets/Graphics/Factory/Greenhouse.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Graphics/Factory/SolarPanel.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Graphics/Factory/Base.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Graphics/Factory/Mine.png" type="Texture" id=4]
 [ext_resource path="res://Scripts/UI.gd" type="Script" id=5]
+[ext_resource path="res://Assets/Graphics/Plant/Crops.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Graphics/Factory/Storage.png" type="Texture" id=7]
 
 [node name="UI" type="Control"]
 anchor_right = 0.922
@@ -55,14 +57,14 @@ margin_right = 204.0
 margin_bottom = 340.0
 rect_scale = Vector2( 0.685158, 0.654964 )
 
-[node name="greenhouse" type="Button" parent="Farm Buildings"]
+[node name="crops" type="Button" parent="Farm Buildings"]
 margin_right = 76.0
 margin_bottom = 70.0
 hint_tooltip = "$500"
 mouse_default_cursor_shape = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
-icon = ExtResource( 1 )
+icon = ExtResource( 6 )
 
 [node name="solar" type="Button" parent="Farm Buildings"]
 margin_top = 74.0
@@ -73,6 +75,16 @@ mouse_default_cursor_shape = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 icon = ExtResource( 2 )
+
+[node name="greenhouse" type="Button" parent="Farm Buildings"]
+margin_top = 148.0
+margin_right = 76.0
+margin_bottom = 218.0
+hint_tooltip = "$500"
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+icon = ExtResource( 1 )
 
 [node name="ShopText" type="Label" parent="."]
 margin_left = 128.0
@@ -96,27 +108,39 @@ margin_right = 204.0
 margin_bottom = 340.0
 rect_scale = Vector2( 0.685158, 0.654964 )
 
-[node name="base" type="Button" parent="Company Buildings"]
+[node name="mine" type="Button" parent="Company Buildings"]
 margin_right = 76.0
 margin_bottom = 70.0
-hint_tooltip = "1000"
-mouse_default_cursor_shape = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
-icon = ExtResource( 3 )
-
-[node name="mine" type="Button" parent="Company Buildings"]
-margin_top = 74.0
-margin_right = 76.0
-margin_bottom = 144.0
 hint_tooltip = "800"
 mouse_default_cursor_shape = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 icon = ExtResource( 4 )
 
+[node name="base" type="Button" parent="Company Buildings"]
+margin_top = 74.0
+margin_right = 76.0
+margin_bottom = 144.0
+hint_tooltip = "1000"
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+icon = ExtResource( 3 )
+
+[node name="storage" type="Button" parent="Company Buildings"]
+margin_top = 148.0
+margin_right = 76.0
+margin_bottom = 218.0
+hint_tooltip = "1000"
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+icon = ExtResource( 7 )
+
 [connection signal="button_up" from="EndTurnButton" to="." method="_on_EndTurnButton_button_up"]
-[connection signal="button_up" from="Farm Buildings/greenhouse" to="." method="_on_greenhouse_button_up"]
+[connection signal="button_up" from="Farm Buildings/crops" to="." method="_on_crops_button_up"]
 [connection signal="button_up" from="Farm Buildings/solar" to="." method="_on_solar_button_up"]
-[connection signal="button_up" from="Company Buildings/base" to="." method="_on_base_button_up"]
+[connection signal="button_up" from="Farm Buildings/greenhouse" to="." method="_on_greenhouse_button_up"]
 [connection signal="button_up" from="Company Buildings/mine" to="." method="_on_mine_button_up"]
+[connection signal="button_up" from="Company Buildings/base" to="." method="_on_base_button_up"]
+[connection signal="button_up" from="Company Buildings/storage" to="." method="_on_storage_button_up"]

@@ -37,6 +37,7 @@ func place_building ():
 	print(globals.next_placement_cost())
 	if globals.next_placement != 0 && globals.cur_player_money() >= globals.next_placement_cost() && buildingType != globals.next_placement:
 		globals.money[globals.cur_player] -= globals.next_placement_cost()
+		globals.updateMoney = true
 		var img = globals.BuildingsTextures[globals.next_placement]
 		if img != null:
 			buildingIcon.set_texture(img)
