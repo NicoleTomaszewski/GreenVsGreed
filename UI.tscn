@@ -33,7 +33,7 @@ margin_left = 8.0
 margin_top = 8.0
 margin_right = 107.0
 margin_bottom = 32.0
-text = "Money: $20000
+text = "Money: $1000
 Income: $0"
 
 [node name="EndTurnButton" type="Button" parent="."]
