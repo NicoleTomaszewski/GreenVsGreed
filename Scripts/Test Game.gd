@@ -3,16 +3,18 @@ extends Node2D
 func _on_A1_button_up():
 	
 	var box1 = StyleBoxFlat.new()
-	box1.bg_color = Color(0.79, 0.79, 0.79, 1)
+	box1.bg_color = Color(0.69, 0.69, 0.69, 1)
 	$"HBoxContainer/Grid/A 1-5/A1".set("custom_styles/normal", box1)
 	
 	var box2 = StyleBoxFlat.new()
-	box2.bg_color = Color(0.69, 0.69, 0.69, 1)
+	box2.bg_color = Color(0.59, 0.59, 0.59, 1)
 	$"HBoxContainer/Grid/A 1-5/A1".set("custom_styles/hover", box2)
 	
 	var box3 = StyleBoxFlat.new()
-	box3.bg_color = Color(0.59, 0.59, 0.59, 1)
+	box3.bg_color = Color(0.49, 0.49, 0.49, 1)
 	$"HBoxContainer/Grid/A 1-5/A1".set("custom_styles/pressed", box3)
+	
+
 
 
 #func _on_A2_button_up():
