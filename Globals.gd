@@ -34,7 +34,8 @@ enum BuildingsFarmer {
 }
 enum BuildingsCompany {
 	MINE = 2,
-	BASE = 4
+	BASE = 4,
+	STORAGE = 6
 }
 
 const BuildingsCost = [
@@ -52,7 +53,8 @@ const BuildingsTextures = [
 	preload("res://Assets/Graphics/Factory/Mine.png"),
 	preload("res://Assets/Graphics/Factory/SolarPanel.png"),
 	null,
-	preload("res://Assets/Graphics/Factory/Greenhouse.png")
+	preload("res://Assets/Graphics/Factory/Greenhouse.png"),
+	preload("res://Assets/Graphics/Factory/Storage.png")
 ]
 
 var next_placement = BuildingsFarmer.SOLAR
