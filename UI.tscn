@@ -1,15 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://assets/gfs/Plant/cornDouble_S.png" type="Texture" id=1]
-[ext_resource path="res://assets/gfs/Plant/cornYoung_N.png" type="Texture" id=2]
-[ext_resource path="res://assets/gfs/Plant/cornYoungDouble_E.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Graphics/Factory/Greenhouse.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Graphics/Factory/SolarPanel.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Graphics/Factory/Base.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Graphics/Factory/Mine.png" type="Texture" id=4]
 
 [node name="UI" type="Control"]
-anchor_right = 1.0
+anchor_right = 0.922
 anchor_bottom = 1.0
-margin_left = 320.0
-margin_right = -512.0
-margin_bottom = -280.0
+margin_left = 328.0
+margin_right = 328.0
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_right = 192.0
@@ -62,13 +62,13 @@ text = "25 (+80)
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_left = 128.0
 margin_top = 48.0
-margin_right = 434.0
-margin_bottom = 2132.0
-rect_scale = Vector2( 0.178625, 0.101178 )
+margin_right = 204.0
+margin_bottom = 340.0
+rect_scale = Vector2( 0.685158, 0.654964 )
 
 [node name="Item" type="Button" parent="VBoxContainer"]
-margin_right = 268.0
-margin_bottom = 518.0
+margin_right = 76.0
+margin_bottom = 70.0
 hint_tooltip = "$500"
 mouse_default_cursor_shape = 2
 size_flags_horizontal = 0
@@ -76,31 +76,34 @@ size_flags_vertical = 0
 icon = ExtResource( 1 )
 
 [node name="Item2" type="Button" parent="VBoxContainer"]
-margin_top = 522.0
-margin_right = 268.0
-margin_bottom = 1040.0
+margin_top = 74.0
+margin_right = 76.0
+margin_bottom = 144.0
+hint_tooltip = "1000"
 mouse_default_cursor_shape = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
-icon = ExtResource( 1 )
+icon = ExtResource( 3 )
 
 [node name="Item3" type="Button" parent="VBoxContainer"]
-margin_top = 1044.0
-margin_right = 268.0
-margin_bottom = 1562.0
+margin_top = 148.0
+margin_right = 76.0
+margin_bottom = 218.0
+hint_tooltip = "2000"
 mouse_default_cursor_shape = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 icon = ExtResource( 2 )
 
 [node name="Item4" type="Button" parent="VBoxContainer"]
-margin_top = 1560.0
-margin_right = 268.0
-margin_bottom = 2084.0
+margin_top = 222.0
+margin_right = 76.0
+margin_bottom = 292.0
+hint_tooltip = "800"
 mouse_default_cursor_shape = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
-icon = ExtResource( 3 )
+icon = ExtResource( 4 )
 
 [node name="ShopText" type="Label" parent="."]
 margin_left = 128.0
